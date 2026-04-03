@@ -1,32 +1,25 @@
-# FlightBookingProject
+# FlightBookingProject (Learning Sandbox)
+This is my first major learning project created to explore the Java / Spring Boot ecosystem. It is a work-in-progress "sandbox" where I experimented with backend concepts.
 
-Dies ist ein **persönliches Lernprojekt**, das ich erstellt habe, um praktische Erfahrung in der Backend-Entwicklung mit Java und Spring Boot zu sammeln. Dabei wollte ich den Umgang mit **REST-APIs**, **Token-Authentifizierung**, **OOP-Prinzipien** und gängigen Webstandards besser verstehen.
+## Project Status
+Archived / Unmaintained: This project is currently not functional in a production sense.
 
-## Projektübersicht
+Purpose: The goal was not to build a finished product, but to practice writing code, structuring packages, and integrating APIs.
 
-Das Projekt ermöglicht die **Suche nach Flügen** über die Amadeus-API. Nutzer können Flüge nach verschiedenen Kriterien wie Datum, Preis und Anzahl der Zwischenstopps filtern und anzeigen lassen.
+Broken Integrations: External API calls (Amadeus) may fail due to expired credentials or architectural shifts during the learning process.
 
-Ein **Buchungssystem** sowie ein **Frontend mit React** waren ursprünglich geplant, wurden jedoch nicht umgesetzt.
+## What I focused on (Learning Goals):
+Instead of looking at this as a working app, look at the code to see what I was practicing:
 
-## Verwendete Technologien
+Spring Boot Basics: Setting up controllers, services, and repositories.
 
-- **Java 17**, **Spring Boot**
-- **MySQL**, **JPA / Hibernate**
-- **REST API (Amadeus API)**
+REST API Exploration: Learning how to send requests to the Amadeus API and handle JSON responses.
 
-## Lernziele & Erkenntnisse
+Security Experiments: Basic attempts at implementing JWT and Spring Security (see SecurityConfig.java).
 
-- Nutzung externer APIs mit Token-Authentifizierung (OAuth2)
-- Aufbau einer REST-Architektur nach modernen Standards
-- Anwendung objektorientierter Programmierung in der Praxis
-- Integration und Modellierung relationaler Daten mit JPA
-- Umgang mit Datenfilterung, Fehlerbehandlung und API-Design
+Data Modeling: Using Hibernate/JPA to define relationships between Users, Flights, and Bookings.
 
-## Sicherheit
+Error Handling: Practicing global exception management with @ControllerAdvice.
 
-Alle sensiblen Daten wie API-Keys, Zugangsdaten und Tokens wurden aus dem Repository entfernt und über Umgebungsvariablen verarbeitet. Das Projekt enthält keine vertraulichen Informationen.
-
-## Hinweis
-
-Dieses Projekt dient ausschließlich Lernzwecken und ist nicht für den produktiven Einsatz bestimmt.
-
+## Reflections:
+Looking back at this code, I now see many "bad" practices (lack of interface abstraction, incomplete logic in some services, etc.). However, this project served as the essential stepping stone that allowed me to build my later, more robust projects like the MunichWay Scooter Service.
